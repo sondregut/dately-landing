@@ -137,8 +137,8 @@ export default function TermsPage() {
             <h2 className="text-xl font-semibold text-gray-900 mb-4">14. Contact Us</h2>
             <p className="text-gray-700 leading-relaxed">
               If you have any questions about these Terms, please contact us at:{" "}
-              <a href="mailto:support@trydately.app" className="text-rose-600 hover:text-rose-700">
-                support@trydately.app
+              <a href="mailto:sondre@stavhopp.no" className="text-rose-600 hover:text-rose-700">
+                sondre@stavhopp.no
               </a>
             </p>
           </section>

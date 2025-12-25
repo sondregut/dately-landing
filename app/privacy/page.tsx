@@ -134,7 +134,7 @@ export default function PrivacyPage() {
             <p className="text-gray-700 leading-relaxed">
               California residents have additional rights under the CCPA, including the right to know
               what personal information we collect, request deletion, and opt-out of sales (we do not
-              sell personal information). To exercise these rights, contact us at support@trydately.app.
+              sell personal information). To exercise these rights, contact us at sondre@stavhopp.no.
             </p>
           </section>
 
@@ -151,8 +151,8 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-semibold text-gray-900 mb-4">13. Contact Us</h2>
             <p className="text-gray-700 leading-relaxed">
               If you have any questions about this Privacy Policy or our data practices, please contact us at:{" "}
-              <a href="mailto:support@trydately.app" className="text-rose-600 hover:text-rose-700">
-                support@trydately.app
+              <a href="mailto:sondre@stavhopp.no" className="text-rose-600 hover:text-rose-700">
+                sondre@stavhopp.no
               </a>
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
