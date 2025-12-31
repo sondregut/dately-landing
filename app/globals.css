@@ -3,12 +3,25 @@
 @tailwind utilities;
 
 :root {
+  /* Light Theme - Colormind Romantic */
   --coral: #E27A75;
   --lavender: #D0B5D0;
   --peach: #EE8E77;
   --rose: #ED878D;
   --cream: #FBFDFB;
   --warm-brown: #3D2A2A;
+
+  /* Dark Theme - Luxury Oxblood Romance */
+  --bg-dark: #0F0B0A;
+  --bg-dark-mid: #181110;
+  --bg-dark-deep: #0D0908;
+  --text-ivory: #F3EEE9;
+  --text-linen: #CFC5BD;
+  --text-taupe: #8F857E;
+  --wine-red: #8B3A34;
+  --burgundy: #722F37;
+  --oxblood: #6B2D26;
+  --champagne-gold: #C7B28A;
 }
 
 html {
@@ -16,57 +29,120 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, #FBFDFB 0%, #F8F5F5 50%, #F0EAEA 100%);
+  background: var(--bg-dark);
   min-height: 100vh;
+  font-family: var(--font-inter), system-ui, sans-serif;
 }
 
-/* Gradient text utility */
+/* Typography - Luxury Style */
+.font-heading {
+  font-family: var(--font-libre), Georgia, serif;
+}
+
+.font-body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Display text for hero */
+.display-logo {
+  font-family: var(--font-libre), Georgia, serif;
+  font-size: clamp(3rem, 12vw, 7rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.display-tagline {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Gradient text utility - champagne gold */
 .gradient-text {
-  background: linear-gradient(135deg, var(--coral) 0%, var(--rose) 100%);
+  background: linear-gradient(135deg, var(--champagne-gold) 0%, var(--text-ivory) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Glass card effect */
-.glass-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(226, 122, 117, 0.15);
+/* Wine red gradient text */
+.gradient-text-wine {
+  background: linear-gradient(135deg, var(--wine-red) 0%, var(--burgundy) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-/* Button hover glow */
-.btn-glow {
+/* Button styles - luxury */
+.btn-primary {
+  background: linear-gradient(135deg, var(--wine-red) 0%, var(--oxblood) 100%);
+  color: var(--text-ivory);
+  border: 1px solid rgba(199, 178, 138, 0.2);
   transition: all 0.3s ease;
 }
 
-.btn-glow:hover {
-  box-shadow: 0 10px 40px -10px rgba(226, 122, 117, 0.5);
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--wine-red) 100%);
+  box-shadow: 0 10px 40px -10px rgba(139, 58, 52, 0.5);
   transform: translateY(-2px);
 }
 
-/* Phone mockup shine effect */
-@keyframes shine {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
+.btn-secondary {
+  background: transparent;
+  color: var(--text-ivory);
+  border: 1px solid rgba(199, 178, 138, 0.3);
+  transition: all 0.3s ease;
 }
 
-.phone-shine::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
-  animation: shine 3s infinite;
+.btn-secondary:hover {
+  background: rgba(199, 178, 138, 0.1);
+  border-color: var(--champagne-gold);
+  transform: translateY(-2px);
+}
+
+/* Decorative line */
+.decorative-line {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--champagne-gold), transparent);
+}
+
+/* Subtle glow effect */
+.glow-subtle {
+  box-shadow: 0 0 60px rgba(139, 58, 52, 0.15);
+}
+
+/* Background with subtle gradient overlay */
+.luxury-bg {
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(139, 58, 52, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(199, 178, 138, 0.05) 0%, transparent 50%),
+    linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-dark-mid) 50%, var(--bg-dark-deep) 100%);
+}
+
+/* Footer link hover */
+.footer-link {
+  color: var(--text-taupe);
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--text-ivory);
+}
+
+/* App Store button styling */
+.store-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.store-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }

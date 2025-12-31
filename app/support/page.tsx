@@ -1,101 +1,126 @@
+import Link from 'next/link'
+
 export default function SupportPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-orange-50 py-16 px-4">
-      <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Support</h1>
-        <p className="text-gray-500 mb-8">We&apos;re here to help you make the most of Dately</p>
+    <main className="min-h-screen luxury-bg">
+      <div className="max-w-3xl mx-auto px-6 md:px-12 py-20">
+        {/* Back Link */}
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 mb-12 transition-colors duration-200"
+          style={{
+            color: 'var(--text-taupe)',
+            fontFamily: 'var(--font-inter), system-ui, sans-serif'
+          }}
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to Home
+        </Link>
 
+        {/* Title */}
+        <h1
+          className="text-4xl md:text-5xl mb-8"
+          style={{
+            color: 'var(--text-ivory)',
+            fontFamily: 'var(--font-libre), Georgia, serif'
+          }}
+        >
+          Support
+        </h1>
+
+        {/* Subtitle */}
+        <p
+          className="text-sm mb-12"
+          style={{
+            color: 'var(--text-taupe)',
+            fontFamily: 'var(--font-inter), system-ui, sans-serif'
+          }}
+        >
+          We&apos;re here to help
+        </p>
+
+        {/* Content */}
         <div className="space-y-8">
-          {/* Contact Section */}
-          <section className="bg-rose-50 rounded-xl p-6">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Contact Us</h2>
-            <p className="text-gray-700 mb-4">
-              Have a question, feedback, or need help? Reach out to our team:
+          <section>
+            <h2
+              className="text-xl mb-4"
+              style={{
+                color: 'var(--text-ivory)',
+                fontFamily: 'var(--font-libre), Georgia, serif'
+              }}
+            >
+              Contact Us
+            </h2>
+            <p className="leading-relaxed mb-4" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter), system-ui, sans-serif' }}>
+              Have a question or need assistance? Reach out to our support team.
             </p>
             <a
-              href="mailto:sondre@stavhopp.no"
-              className="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+              href="mailto:support@trydately.com"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl btn-primary"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              sondre@stavhopp.no
+              Email Support
             </a>
           </section>
 
-          {/* FAQ Section */}
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              <div className="border border-gray-200 rounded-lg p-4">
-                <h3 className="font-medium text-gray-900 mb-2">How do I cancel my subscription?</h3>
-                <p className="text-gray-600 text-sm">
-                  You can cancel your Dately Pro subscription anytime through your Apple ID settings.
-                  Go to Settings &gt; [Your Name] &gt; Subscriptions &gt; Dately, then tap Cancel Subscription.
+            <h2
+              className="text-xl mb-4"
+              style={{
+                color: 'var(--text-ivory)',
+                fontFamily: 'var(--font-libre), Georgia, serif'
+              }}
+            >
+              FAQs
+            </h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="font-medium mb-2" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-inter), system-ui, sans-serif' }}>
+                  How does Dately work?
+                </h3>
+                <p className="leading-relaxed" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter), system-ui, sans-serif' }}>
+                  Dately uses AI to generate personalized date plans based on your preferences.
+                  Simply scratch to reveal your surprise date!
                 </p>
               </div>
-
-              <div className="border border-gray-200 rounded-lg p-4">
-                <h3 className="font-medium text-gray-900 mb-2">How do I delete my account?</h3>
-                <p className="text-gray-600 text-sm">
-                  To delete your account and all associated data, go to Profile &gt; Settings &gt; Account &amp; Security &gt; Delete Account.
-                  This action is permanent and cannot be undone.
-                </p>
-              </div>
-
-              <div className="border border-gray-200 rounded-lg p-4">
-                <h3 className="font-medium text-gray-900 mb-2">Why does Dately need my location?</h3>
-                <p className="text-gray-600 text-sm">
-                  We use your location to find nearby restaurants, venues, and activities for your date suggestions.
-                  You can disable location access in your device settings, but this will limit the personalization of recommendations.
-                </p>
-              </div>
-
-              <div className="border border-gray-200 rounded-lg p-4">
-                <h3 className="font-medium text-gray-900 mb-2">How do I connect with my partner?</h3>
-                <p className="text-gray-600 text-sm">
-                  Go to Profile &gt; Partner to generate an invite code. Share this code with your partner,
-                  and they can enter it in their app to connect your accounts.
-                </p>
-              </div>
-
-              <div className="border border-gray-200 rounded-lg p-4">
-                <h3 className="font-medium text-gray-900 mb-2">How do I restore my purchases?</h3>
-                <p className="text-gray-600 text-sm">
-                  If you&apos;ve previously subscribed to Dately Pro, you can restore your purchase by going to
-                  the paywall screen and tapping &quot;Restore Purchases&quot; at the bottom.
-                </p>
-              </div>
-
-              <div className="border border-gray-200 rounded-lg p-4">
-                <h3 className="font-medium text-gray-900 mb-2">Is my data secure?</h3>
-                <p className="text-gray-600 text-sm">
-                  Yes! We use industry-standard encryption and secure servers to protect your data.
-                  Your photos and memories are private and only visible to you and your connected partner.
-                  Read our <a href="/privacy" className="text-rose-600 hover:underline">Privacy Policy</a> for more details.
+              <div>
+                <h3 className="font-medium mb-2" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-inter), system-ui, sans-serif' }}>
+                  Is Dately free to use?
+                </h3>
+                <p className="leading-relaxed" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter), system-ui, sans-serif' }}>
+                  Dately offers both free and premium plans. Free users can generate a limited
+                  number of date plans per month.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Links Section */}
-          <section className="border-t border-gray-200 pt-8">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Legal</h2>
-            <div className="flex gap-6">
-              <a href="/terms" className="text-rose-600 hover:text-rose-700 font-medium">
-                Terms of Service
-              </a>
-              <a href="/privacy" className="text-rose-600 hover:text-rose-700 font-medium">
-                Privacy Policy
-              </a>
-            </div>
+          <section>
+            <h2
+              className="text-xl mb-4"
+              style={{
+                color: 'var(--text-ivory)',
+                fontFamily: 'var(--font-libre), Georgia, serif'
+              }}
+            >
+              Follow Us
+            </h2>
+            <a
+              href="https://instagram.com/trydately"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors duration-200"
+              style={{ color: 'var(--champagne-gold)' }}
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              @trydately
+            </a>
           </section>
-        </div>
-
-        <div className="mt-12 pt-8 border-t border-gray-200 text-center">
-          <p className="text-gray-500 text-sm">&copy; 2025 STAVHOPP.NO LLC. All rights reserved.</p>
         </div>
       </div>
     </main>
-  );
+  )
 }
