@@ -1,12 +1,39 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col luxury-bg">
+    <section className="relative min-h-screen flex flex-col">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/hero-bg.jpg"
+          alt="Romantic date background"
+          fill
+          priority
+          className="object-cover"
+          quality={90}
+        />
+        {/* Dark overlay */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to right, rgba(15, 11, 10, 0.85) 0%, rgba(15, 11, 10, 0.7) 50%, rgba(15, 11, 10, 0.5) 100%)',
+          }}
+        />
+        {/* Bottom gradient for footer blend */}
+        <div
+          className="absolute bottom-0 left-0 right-0 h-32"
+          style={{
+            background: 'linear-gradient(to top, var(--bg-dark-deep) 0%, transparent 100%)',
+          }}
+        />
+      </div>
+
       {/* Main Content - Centered */}
-      <div className="flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-24 py-20">
+      <div className="relative z-10 flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-24 py-20">
         <div className="max-w-3xl">
           {/* Tagline with decorative line */}
           <motion.div
@@ -16,7 +43,7 @@ export default function Hero() {
             className="flex items-center gap-4 mb-8"
           >
             <div className="decorative-line" />
-            <span className="display-tagline" style={{ color: 'var(--text-taupe)' }}>
+            <span className="display-tagline" style={{ color: 'var(--text-linen)' }}>
               Scratch to Reveal Your Next Date
             </span>
           </motion.div>
@@ -88,38 +115,6 @@ export default function Hero() {
             Coming soon to iOS. Join the waitlist for early access.
           </motion.p>
         </div>
-      </div>
-
-      {/* Subtle Background Image Overlay - positioned right */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Decorative gradient orbs */}
-        <motion.div
-          className="absolute top-1/4 right-1/4 w-[500px] h-[500px] rounded-full opacity-[0.03]"
-          style={{ background: 'radial-gradient(circle, var(--wine-red) 0%, transparent 70%)' }}
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.03, 0.05, 0.03],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        <motion.div
-          className="absolute bottom-1/4 right-1/3 w-[300px] h-[300px] rounded-full opacity-[0.02]"
-          style={{ background: 'radial-gradient(circle, var(--champagne-gold) 0%, transparent 70%)' }}
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.02, 0.04, 0.02],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
-          }}
-        />
       </div>
     </section>
   )
