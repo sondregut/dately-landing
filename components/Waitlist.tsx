@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { supabase } from '@/lib/supabase'
+import type { SupabaseClient } from '@supabase/supabase-js'
 
 export default function Waitlist() {
   const [email, setEmail] = useState('')
@@ -18,8 +19,14 @@ export default function Waitlist() {
     setStatus('loading')
     setErrorMessage('')
 
+    if (!supabase) {
+      setStatus('error')
+      setErrorMessage('Service temporarily unavailable. Please try again later.')
+      return
+    }
+
     try {
-      const { error } = await supabase
+      const { error } = await (supabase as SupabaseClient)
         .from('waitlist')
         .insert([
           {
@@ -105,7 +112,7 @@ export default function Waitlist() {
           className="font-body text-lg mb-10"
           style={{ color: 'var(--text-linen)' }}
         >
-          Get early access and be among the first couples to experience Dately.
+          Get early access and be the first to experience Dately.
         </motion.p>
 
         {/* Form */}
