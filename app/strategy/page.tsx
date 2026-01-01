@@ -177,7 +177,7 @@ export default function MarketingStrategyPage() {
             Quick Navigation
           </p>
           <div className="flex flex-wrap gap-2">
-            {['Mission', 'Audiences', 'Positioning', 'Messaging', 'Channels', 'Campaigns', 'Visual Guidelines', 'Metrics'].map((item) => (
+            {['Mission', 'Audiences', 'Positioning', 'Messaging', 'Channels', 'Campaigns', 'Visual Guidelines', 'Metrics', 'App Store Copy', 'Social Copy', 'Video Scripts', 'Email', 'Testimonials', 'Hashtags'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '-')}`}
@@ -693,6 +693,453 @@ export default function MarketingStrategyPage() {
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </section>
+
+          {/* App Store Copy */}
+          <section id="app-store-copy">
+            <h2 className="text-2xl mb-6" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>
+              9. App Store Copy
+            </h2>
+
+            {/* Full Universal Version */}
+            <div className="mb-8">
+              <h3 className="text-lg mb-4" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-libre)' }}>Full Description (Universal)</h3>
+              <div className="p-6 rounded-lg font-mono text-sm whitespace-pre-wrap" style={{ background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(199, 178, 138, 0.1)', color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+{`DATELY: The AI Date Planner That Actually Works
+
+Stop planning. Start dating. Whether you're keeping the spark alive or planning a first date to impress, Dately creates personalized itineraries in seconds—real venues, real events, ready to book.
+
+SCRATCH TO REVEAL
+Every date is a surprise. Scratch interactive cards to reveal AI-generated plans tailored to your vibe and budget. It's like a lottery ticket for your love life.
+
+PERFECT FOR COUPLES & SINGLES
+• Couples: Break the routine. Discover new experiences together.
+• Singles: Plan dates that impress without the stress.
+• New relationships: Focus on the connection, not the logistics.
+
+REAL VENUES. REAL EXPERIENCES.
+We don't guess—we know. Using real data from Google Places, Ticketmaster, and live sources, each date includes:
+• Specific venue addresses and hours
+• Parking tips and reviews
+• Reservation links (book directly)
+• Travel times between stops
+• Cost estimates upfront
+
+AI THAT KNOWS YOUR STYLE
+Based on your preferences—budget, energy level, dietary needs, and vibe—our AI (powered by Claude) creates personalized itineraries. No generic suggestions.
+
+8 DATE PACKS FOR ANY MOOD
+• Local Events (concerts, shows, festivals)
+• Foodie Adventures (restaurant discoveries)
+• Outdoor & Active (hikes, sports, adventures)
+• Cozy Nights In (movies, cooking at home)
+• Budget Friendly (amazing dates, small price)
+• Adventure Mode (spontaneous surprises)
+• Arts & Culture (museums, galleries, theater)
+• Spicy (intimate experiences for adults, 18+)
+
+FREE VS PRO
+Free: 2 dates per week, 1 re-roll daily
+Pro: Unlimited scratches, 5 re-rolls daily, all packs including Spicy
+
+7-DAY FREE TRIAL • CANCEL ANYTIME
+
+Stop saying "I don't know, what do you want to do?"
+Download Dately today.`}
+              </div>
+            </div>
+
+            {/* Short Versions */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg mb-4" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-libre)' }}>Short Version (Couples)</h3>
+                <div className="p-5 rounded-lg text-sm whitespace-pre-wrap" style={{ background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(199, 178, 138, 0.1)', color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+{`DATELY: Date Nights Made Easy
+
+Tired of planning the same dates? Dately uses AI to create surprise date itineraries with real venues in your area. Scratch to reveal, commit to the plan, and save the memories in your shared scrapbook.
+
+• Personalized to your budget, vibe, and preferences
+• Real venues with addresses, hours, and reservations
+• 8 themed packs from Foodie to Adventure to Spicy
+• Memory scrapbook to treasure your journey
+
+Stop planning. Start dating.
+Try free. Upgrade to Pro for unlimited.`}
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg mb-4" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-libre)' }}>Short Version (Singles)</h3>
+                <div className="p-5 rounded-lg text-sm whitespace-pre-wrap" style={{ background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(199, 178, 138, 0.1)', color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+{`DATELY: Plan Dates That Impress
+
+Planning a date shouldn't be stressful. Dately creates complete itineraries with the best spots in your area—so you can focus on the person, not the logistics.
+
+• AI picks the perfect venues for your budget and vibe
+• Multi-stop plans: dinner, activity, dessert—all timed out
+• Real data: addresses, hours, reservation links
+• Look like you spent hours planning in under 60 seconds
+
+Your secret weapon for unforgettable dates.
+Download free today.`}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Social Media Copy */}
+          <section id="social-copy">
+            <h2 className="text-2xl mb-6" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>
+              10. Social Media Copy
+            </h2>
+
+            <h3 className="text-lg mb-4" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>Short-Form Copy</h3>
+            <div className="grid gap-4 mb-8">
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(139, 58, 52, 0.1)', border: '1px solid rgba(139, 58, 52, 0.2)' }}>
+                <p className="text-xs uppercase tracking-wider mb-2" style={{ color: 'var(--wine-red)', fontFamily: 'var(--font-inter)' }}>Universal - Problem/Solution</p>
+                <p style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  "Planning dates shouldn't be stressful. Dately does the work: picks the venue, sets the timing, handles the details. You just show up and enjoy. Real data. AI personalization. 60 seconds to your next great date."
+                </p>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="text-xs uppercase tracking-wider mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Couples - Routine Breaker</p>
+                <p style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  "When's the last time you did something you've NEVER done before... together? Dately finds unique experiences in your area. No more 'I don't know, what do you want to do?' Download free."
+                </p>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="text-xs uppercase tracking-wider mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Singles - Impress</p>
+                <p style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  "They'll never know you didn't spend hours planning. Dately creates complete date itineraries—dinner, activity, dessert—in 60 seconds. Your secret weapon for first dates."
+                </p>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="text-xs uppercase tracking-wider mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Singles - Stand Out</p>
+                <p style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  "Dinner and a movie? Boring. Dately plans unique, memorable dates with real venues in your area. Stand out from every other date they've been on."
+                </p>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="text-xs uppercase tracking-wider mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Spicy Pack (18+)</p>
+                <p style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  "Couples-only app with an intimate side. Dately generates date ideas, AND when you're ready, the Spicy pack adds challenges customized to your comfort level. Private. Personalized. For adults only."
+                </p>
+              </div>
+            </div>
+
+            {/* Carousel Ad */}
+            <h3 className="text-lg mb-4" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>Instagram/Facebook Carousel Ad</h3>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-8">
+              {[
+                "Planning dates is stressful. It doesn't have to be.",
+                "Tell Dately your vibe, budget, and location",
+                "Scratch to reveal AI-generated surprise dates",
+                "Get complete itineraries with real venues",
+                "Save memories in your personal scrapbook"
+              ].map((slide, i) => (
+                <div key={i} className="p-4 rounded-lg text-center" style={{ background: 'rgba(139, 58, 52, 0.15)', border: '1px solid rgba(139, 58, 52, 0.3)' }}>
+                  <p className="text-xs mb-2" style={{ color: 'var(--champagne-gold)' }}>Slide {i + 1}</p>
+                  <p className="text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>{slide}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Video Scripts */}
+          <section id="video-scripts">
+            <h2 className="text-2xl mb-6" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>
+              11. Video Scripts
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div>
+                <h3 className="text-lg mb-4" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-libre)' }}>30-Second Universal</h3>
+                <div className="p-5 rounded-lg text-sm whitespace-pre-wrap" style={{ background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(199, 178, 138, 0.1)', color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+{`[Scratch animation on screen]
+VO: "What should we do tonight?"
+
+[Text: "The question that kills date night"]
+
+VO: "Dately answers it in 60 seconds."
+
+[Phone showing preference selection]
+VO: "Tell it your vibe, budget, and location."
+
+[Scratch card being revealed]
+VO: "Scratch to reveal your personalized date."
+
+[Full itinerary showing with map]
+VO: "Get real venues. Real times. Ready to book."
+
+[Happy couple/person on date]
+VO: "All you have to do is show up."
+
+[App logo + App Store badge]
+SUPER: "Stop planning. Start dating."
+CTA: "Download Free"`}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-lg mb-4" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-libre)' }}>30-Second Singles</h3>
+                <div className="p-5 rounded-lg text-sm whitespace-pre-wrap" style={{ background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(199, 178, 138, 0.1)', color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+{`[Person looking stressed at phone]
+VO: "Planning a first date?"
+
+[Overwhelmed by options]
+VO: "Too many options. Too much pressure."
+
+[Dately app opening]
+VO: "Dately does it for you."
+
+[Quick preference selection, scratch, reveal]
+VO: "Budget, vibe, location. Scratch. Done."
+
+[Complete itinerary with venues]
+VO: "Dinner. Activity. Dessert. All planned."
+
+[Confident person on date]
+VO: "They'll think you're a genius."
+
+[App logo]
+SUPER: "Plan dates that impress."
+CTA: "Download Free"`}
+                </div>
+              </div>
+            </div>
+
+            {/* TikTok Concepts */}
+            <h3 className="text-lg mb-4" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>TikTok Content Concepts</h3>
+            <div className="grid md:grid-cols-3 gap-4">
+              {[
+                { title: "He Used AI to Plan Our Date", desc: "POV of going on a date planned entirely by Dately. Reveal the stops, show reactions." },
+                { title: "First Date vs. 100th Date", desc: "Same couple, both dates planned by Dately. Show it works for any stage." },
+                { title: "Scratch Race", desc: "Two people scratch at the same time to reveal different dates. React to what they got." },
+                { title: "I Let an App Plan My Date Night", desc: "Documentary style: skeptical, then impressed as the date unfolds perfectly." },
+                { title: "Rating Dates My App Planned", desc: "Multi-part series rating each stop Dately suggested." },
+                { title: "Date Planning Speedrun", desc: "Show the entire process from opening app to having a complete plan in under 60 seconds." }
+              ].map((concept, i) => (
+                <div key={i} className="p-4 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                  <p className="font-medium mb-2" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-inter)' }}>{concept.title}</p>
+                  <p className="text-sm" style={{ color: 'var(--text-taupe)', fontFamily: 'var(--font-inter)' }}>{concept.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Email Marketing */}
+          <section id="email-marketing">
+            <h2 className="text-2xl mb-6" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>
+              12. Email Marketing
+            </h2>
+
+            <h3 className="text-lg mb-4" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>Subject Lines</h3>
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="text-xs uppercase tracking-wider mb-3" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Universal</p>
+                <ul className="space-y-2 text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  <li>• Your next great date is one scratch away</li>
+                  <li>• Stop saying 'I don't know, what do you want to do?'</li>
+                  <li>• 60 seconds to a date you'll actually remember</li>
+                </ul>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="text-xs uppercase tracking-wider mb-3" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Couples</p>
+                <ul className="space-y-2 text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  <li>• Scratch Your Way to Better Date Nights</li>
+                  <li>• We Planned Your Next Date—Scratch to Find Out</li>
+                  <li>• Break the Routine: Surprise Dates Await</li>
+                  <li>• The App Your Relationship Deserves</li>
+                </ul>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="text-xs uppercase tracking-wider mb-3" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Singles</p>
+                <ul className="space-y-2 text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  <li>• Plan Dates That Actually Impress</li>
+                  <li>• Your Secret Weapon for First Dates</li>
+                  <li>• Stop Overthinking. Start Dating.</li>
+                  <li>• Never Fumble a Date Plan Again</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="text-lg mb-4" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>Seasonal Subject Lines</h3>
+            <div className="flex flex-wrap gap-3">
+              <span className="px-4 py-2 rounded-full text-sm" style={{ background: 'rgba(139, 58, 52, 0.15)', color: 'var(--text-linen)', border: '1px solid rgba(139, 58, 52, 0.3)' }}>
+                Skip the Valentine's Clichés This Year
+              </span>
+              <span className="px-4 py-2 rounded-full text-sm" style={{ background: 'rgba(139, 58, 52, 0.15)', color: 'var(--text-linen)', border: '1px solid rgba(139, 58, 52, 0.3)' }}>
+                Summer Date Ideas That Aren't Just 'Beach'
+              </span>
+              <span className="px-4 py-2 rounded-full text-sm" style={{ background: 'rgba(139, 58, 52, 0.15)', color: 'var(--text-linen)', border: '1px solid rgba(139, 58, 52, 0.3)' }}>
+                New Year Resolution: Date More, Stress Less
+              </span>
+            </div>
+          </section>
+
+          {/* Landing Page Copy */}
+          <section id="landing-copy">
+            <h2 className="text-2xl mb-6" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>
+              13. Landing Page Copy
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(139, 58, 52, 0.1)', border: '1px solid rgba(139, 58, 52, 0.2)' }}>
+                <p className="text-xs uppercase tracking-wider mb-2" style={{ color: 'var(--wine-red)', fontFamily: 'var(--font-inter)' }}>Universal Hero</p>
+                <p className="text-xl mb-2" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>Stop Planning. Start Dating.</p>
+                <p className="text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  AI-powered date itineraries with real venues, personalized to your vibe. Whether it's date night #100 or your very first—we've got you.
+                </p>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="text-xs uppercase tracking-wider mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Couples Variant</p>
+                <p className="text-xl mb-2" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>Date Nights Made Easy</p>
+                <p className="text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  Dately creates surprise date plans tailored to you both. Scratch to reveal, commit to the adventure, save the memories.
+                </p>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="text-xs uppercase tracking-wider mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Singles Variant</p>
+                <p className="text-xl mb-2" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>Plan Dates That Impress</p>
+                <p className="text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  Complete itineraries in 60 seconds. Real venues, perfect timing, zero stress. They'll never know you didn't spend hours planning.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Testimonials */}
+          <section id="testimonials">
+            <h2 className="text-2xl mb-6" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>
+              14. Testimonials
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg mb-4" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-libre)' }}>Couples</h3>
+                <div className="space-y-4">
+                  <div className="p-4 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                    <p className="text-sm italic" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                      "We've been together 8 years and were in such a rut. Dately gave us dates we never would have thought of ourselves. The scratch mechanic makes it exciting—we do it together every Friday."
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                    <p className="text-sm italic" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                      "No more 20-minute debates about where to eat. We just scratch and go. Game changer for busy couples."
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                    <p className="text-sm italic" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                      "Our scrapbook has 6 months of dates now. It's like a relationship diary I never knew I wanted."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-lg mb-4" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-libre)' }}>Singles</h3>
+                <div className="space-y-4">
+                  <div className="p-4 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                    <p className="text-sm italic" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                      "I used to stress for DAYS about planning a first date. Now I spend 60 seconds. My last date told me I was 'the most thoughtful planner she'd ever met.' Thank you, Dately."
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                    <p className="text-sm italic" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                      "The multi-stop plans are genius. Dinner, then arcade, then dessert bar—it looked like I planned for hours."
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                    <p className="text-sm italic" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                      "Finally, an app that actually helps singles. Not just another dating app."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Competitor Comparison */}
+          <section id="competitor-copy">
+            <h2 className="text-2xl mb-6" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>
+              15. Competitor Comparison Copy
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="font-medium mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>vs. Google/Yelp</p>
+                <p className="text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  "Dately isn't a search engine. We don't give you 47 restaurants to scroll through. We give you ONE complete plan—dinner at 7, comedy show at 9, dessert at 11. Done."
+                </p>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="font-medium mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>vs. ChatGPT/Generic AI</p>
+                <p className="text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  "ChatGPT might suggest 'a romantic Italian restaurant.' Dately tells you WHICH one, confirms it's open, and gives you the reservation link. Real data beats generic suggestions."
+                </p>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="font-medium mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>vs. 'Date Ideas' Articles</p>
+                <p className="text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  "Those Pinterest articles are theoretical. 'Have a picnic!' Great—where? What park? What if it's raining? Dately gives you actual, executable plans for your exact location and time."
+                </p>
+              </div>
+              <div className="p-5 rounded-lg" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(199, 178, 138, 0.1)' }}>
+                <p className="font-medium mb-2" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>vs. OpenTable/Resy</p>
+                <p className="text-sm" style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter)' }}>
+                  "They book one restaurant. Dately plans your entire night—dinner, activity, dessert—and times it so you're never rushing or waiting."
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Hashtags */}
+          <section id="hashtags">
+            <h2 className="text-2xl mb-6" style={{ color: 'var(--text-ivory)', fontFamily: 'var(--font-libre)' }}>
+              16. Hashtags
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <p className="text-sm uppercase tracking-wider mb-3" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Primary</p>
+                <div className="flex flex-wrap gap-2">
+                  {['#Dately', '#DateNight', '#DateIdeas', '#DatePlanning'].map(tag => (
+                    <span key={tag} className="px-3 py-1 rounded-full text-sm" style={{ background: 'rgba(139, 58, 52, 0.2)', color: 'var(--text-ivory)', border: '1px solid rgba(139, 58, 52, 0.3)' }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-wider mb-3" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Couples</p>
+                <div className="flex flex-wrap gap-2">
+                  {['#CouplesOfInstagram', '#RelationshipGoals', '#DateNightIdeas', '#CoupleGoals'].map(tag => (
+                    <span key={tag} className="px-3 py-1 rounded-full text-sm" style={{ background: 'rgba(199, 178, 138, 0.1)', color: 'var(--text-linen)', border: '1px solid rgba(199, 178, 138, 0.2)' }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-wider mb-3" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Singles</p>
+                <div className="flex flex-wrap gap-2">
+                  {['#FirstDate', '#DatingAdvice', '#DatingTips', '#SingleLife'].map(tag => (
+                    <span key={tag} className="px-3 py-1 rounded-full text-sm" style={{ background: 'rgba(199, 178, 138, 0.1)', color: 'var(--text-linen)', border: '1px solid rgba(199, 178, 138, 0.2)' }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-wider mb-3" style={{ color: 'var(--champagne-gold)', fontFamily: 'var(--font-inter)' }}>Lifestyle</p>
+                <div className="flex flex-wrap gap-2">
+                  {['#WeekendPlans', '#ThingsToDoIn[City]', '#LocalEvents', '#ExperienceLife'].map(tag => (
+                    <span key={tag} className="px-3 py-1 rounded-full text-sm" style={{ background: 'rgba(199, 178, 138, 0.1)', color: 'var(--text-linen)', border: '1px solid rgba(199, 178, 138, 0.2)' }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </section>
 
