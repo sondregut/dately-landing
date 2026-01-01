@@ -6,17 +6,15 @@ import Link from 'next/link'
 // PIN for accessing this internal document
 const CORRECT_PIN = '010699'
 
-// Note: Since this is a client component, metadata is set via the head tag in the component
-// The page is protected by PIN, but we also add noindex to prevent accidental indexing
-
 export default function MarketingStrategyPage() {
   const [pin, setPin] = useState('')
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [error, setError] = useState(false)
-  const [activeSection, setActiveSection] = useState<string | null>(null)
+  const [mounted, setMounted] = useState(false)
 
   // Check if already authenticated in session
   useEffect(() => {
+    setMounted(true)
     const auth = sessionStorage.getItem('strategy-auth')
     if (auth === 'true') {
       setIsAuthenticated(true)
@@ -35,14 +33,18 @@ export default function MarketingStrategyPage() {
     }
   }
 
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return (
+      <main className="min-h-screen luxury-bg flex items-center justify-center px-6">
+        <div className="w-full max-w-sm" />
+      </main>
+    )
+  }
+
   if (!isAuthenticated) {
     return (
-      <>
-        <head>
-          <meta name="robots" content="noindex, nofollow" />
-          <title>Marketing Strategy | Dately Internal</title>
-        </head>
-        <main className="min-h-screen luxury-bg flex items-center justify-center px-6">
+      <main className="min-h-screen luxury-bg flex items-center justify-center px-6">
         <div className="w-full max-w-sm">
           <div className="text-center mb-8">
             <h1
@@ -113,19 +115,13 @@ export default function MarketingStrategyPage() {
             </Link>
           </div>
         </div>
-        </main>
-      </>
+      </main>
     )
   }
 
   return (
-    <>
-      <head>
-        <meta name="robots" content="noindex, nofollow" />
-        <title>Marketing Strategy | Dately Internal</title>
-      </head>
-      <main className="min-h-screen luxury-bg">
-        <div className="max-w-5xl mx-auto px-6 md:px-12 py-12">
+    <main className="min-h-screen luxury-bg">
+      <div className="max-w-5xl mx-auto px-6 md:px-12 py-12">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
           <Link
@@ -1153,8 +1149,7 @@ CTA: "Download Free"`}
           </div>
 
         </div>
-        </div>
-      </main>
-    </>
+      </div>
+    </main>
   )
 }
