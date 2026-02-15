@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-// PIN for accessing this internal document
-const CORRECT_PIN = '010699'
+// PIN for accessing this internal document — set via NEXT_PUBLIC_STRATEGY_PIN env var
+const CORRECT_PIN = process.env.NEXT_PUBLIC_STRATEGY_PIN || ''
 
 export default function MarketingStrategyPage() {
   const [pin, setPin] = useState('')

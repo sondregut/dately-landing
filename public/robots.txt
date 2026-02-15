@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /strategy/
+
+Sitemap: https://trydately.com/sitemap.xml
