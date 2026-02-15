@@ -23,9 +23,9 @@ export default function Hero() {
             background: 'linear-gradient(to right, rgba(15, 11, 10, 0.85) 0%, rgba(15, 11, 10, 0.7) 50%, rgba(15, 11, 10, 0.5) 100%)',
           }}
         />
-        {/* Bottom gradient for footer blend */}
+        {/* Bottom fade into next section */}
         <div
-          className="absolute bottom-0 left-0 right-0 h-32"
+          className="absolute bottom-0 left-0 right-0 h-40"
           style={{
             background: 'linear-gradient(to top, var(--bg-dark-deep) 0%, transparent 100%)',
           }}
@@ -115,6 +115,26 @@ export default function Hero() {
           </motion.p>
         </div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+      >
+        <motion.a
+          href="#how-it-works"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+          className="block"
+          aria-label="Scroll down"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" style={{ color: 'var(--text-taupe)' }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </motion.a>
+      </motion.div>
     </section>
   )
 }
