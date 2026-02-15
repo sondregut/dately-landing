@@ -15,6 +15,13 @@ const adminPages = [
     badge: '108 ideas',
     accent: false,
   },
+  {
+    title: 'Screen Recordings',
+    description: 'Simple scripts for recording the app generating a date — shot lists, text overlays, voiceover lines, timing, and setup tips. One version silent, one with VO.',
+    href: '/admin/recordings',
+    badge: '2 scripts',
+    accent: false,
+  },
 ]
 
 export default function AdminHub() {
