@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dately — Scratch to Reveal Surprise Date Plans',
     description: 'AI picks real local restaurants, events & activities. You scratch to reveal the plan. Join the waitlist.',
-    images: ['/og-image.png'],
+    images: ['/hero-bg.jpg'],
     creator: '@trydately',
   },
   robots: {
