@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: '%s | Dately',
   },
   description: 'Tired of the same routine? Dately creates AI-powered surprise date plans with real local venues. Scratch to reveal your next adventure. Join the waitlist free.',
-  metadataBase: new URL('https://trydately.com'),
+  metadataBase: new URL('https://trydately.app'),
   alternates: {
     canonical: '/',
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'Dately — Scratch to Reveal Surprise Date Plans',
     description: 'AI picks real local restaurants, events & activities. You scratch to reveal the plan. Try the date night app couples are obsessing over.',
     type: 'website',
-    url: 'https://trydately.com',
+    url: 'https://trydately.app',
     siteName: 'Dately',
     locale: 'en_US',
     images: [
