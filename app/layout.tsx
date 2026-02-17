@@ -74,6 +74,7 @@ export default function RootLayout({
         <meta httpEquiv="X-Frame-Options" content="DENY" />
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta name="referrer" content="origin-when-cross-origin" />
+        <meta name="google-site-verification" content="8ab9cd8ded14e302" />
       </head>
       <body className="antialiased">
         {children}
