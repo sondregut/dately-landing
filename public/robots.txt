@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /strategy/
 
-Sitemap: https://trydately.app/sitemap.xml
+Sitemap: https://www.trydately.app/sitemap.xml

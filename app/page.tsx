@@ -12,8 +12,8 @@ const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Dately',
-  url: 'https://trydately.app',
-  logo: 'https://trydately.app/icon.png',
+  url: 'https://www.trydately.app',
+  logo: 'https://www.trydately.app/icon.png',
   sameAs: [
     'https://instagram.com/trydately',
   ],
@@ -92,7 +92,7 @@ const webSiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Dately',
-  url: 'https://trydately.app',
+  url: 'https://www.trydately.app',
 }
 
 export default function Home() {
