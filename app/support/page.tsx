@@ -1,4 +1,13 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Support & FAQ',
+  description: 'Get help with Dately. Find answers to common questions about our AI date planner, scratch-to-reveal feature, pricing, and city availability.',
+  alternates: {
+    canonical: '/support',
+  },
+}
 
 export default function SupportPage() {
   return (

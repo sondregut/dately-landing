@@ -18,30 +18,48 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Dately - Scratch to Reveal Your Next Date',
-  description: 'AI-powered surprise date plans you scratch to reveal. Create unforgettable memories with your partner, one spontaneous adventure at a time.',
-  keywords: ['date night', 'couples app', 'date ideas', 'relationship', 'romantic', 'surprise dates', 'AI dating'],
+  title: {
+    default: 'Surprise Date Ideas for Couples — AI Date Planner | Dately',
+    template: '%s | Dately',
+  },
+  description: 'Tired of the same routine? Dately creates AI-powered surprise date plans with real local venues. Scratch to reveal your next adventure. Join the waitlist free.',
   metadataBase: new URL('https://trydately.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'Dately - Scratch to Reveal Your Next Date',
-    description: 'AI-powered surprise date plans you scratch to reveal. Create unforgettable memories with your partner.',
+    title: 'Dately — Scratch to Reveal Surprise Date Plans',
+    description: 'AI picks real local restaurants, events & activities. You scratch to reveal the plan. Try the date night app couples are obsessing over.',
     type: 'website',
     url: 'https://trydately.com',
     siteName: 'Dately',
+    locale: 'en_US',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Dately - AI-powered surprise date plans',
+        alt: 'Dately app — scratch to reveal your surprise date plan',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dately - Scratch to Reveal Your Next Date',
-    description: 'AI-powered surprise date plans you scratch to reveal.',
+    title: 'Dately — Scratch to Reveal Surprise Date Plans',
+    description: 'AI picks real local restaurants, events & activities. You scratch to reveal the plan. Join the waitlist.',
     images: ['/og-image.png'],
+    creator: '@trydately',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
