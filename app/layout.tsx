@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/og-image.png',
+        url: '/hero-bg.jpg',
         width: 1200,
         height: 630,
         alt: 'Dately app — scratch to reveal your surprise date plan',
