@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-const CORRECT_PIN = process.env.NEXT_PUBLIC_STRATEGY_PIN || ''
+const CORRECT_PIN = '010699'
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const [pin, setPin] = useState('')
