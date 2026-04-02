@@ -2,11 +2,18 @@ import Link from 'next/link'
 
 const adminPages = [
   {
+    title: 'Promo Codes',
+    description: 'Create and manage promo codes that grant free Pro access to reviewers, press, beta testers, and partners. Track redemptions and revoke access.',
+    href: '/admin/promo-codes',
+    badge: 'Manage',
+    accent: true,
+  },
+  {
     title: 'Marketing Strategy',
     description: 'Brand positioning, messaging framework, campaign concepts, visual guidelines, App Store copy, social media copy, video scripts, and more.',
     href: '/admin/strategy',
     badge: '16 sections',
-    accent: true,
+    accent: false,
   },
   {
     title: 'Content Ideas',
