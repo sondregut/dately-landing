@@ -3,6 +3,7 @@ const nextConfig = {
   trailingSlash: false,
   images: {
     formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 31536000,
   },
   headers: async () => [
     {

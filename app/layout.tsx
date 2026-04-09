@@ -5,12 +5,14 @@ import './globals.css'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
 })
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-libre',
+  display: 'swap',
 })
 
 export const viewport: Viewport = {
