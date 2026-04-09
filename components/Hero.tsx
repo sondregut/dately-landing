@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export default function Hero() {
@@ -12,9 +13,8 @@ export default function Hero() {
           alt="Romantic couple enjoying a surprise date night"
           fill
           priority
-          fetchPriority="high"
           className="object-cover"
-          quality={65}
+          quality={85}
           sizes="100vw"
         />
         {/* Dark overlay */}
@@ -37,33 +37,49 @@ export default function Hero() {
       <div className="relative z-10 flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-24 py-20">
         <div className="max-w-3xl">
           {/* Tagline with decorative line */}
-          <div className="flex items-center gap-4 mb-8 hero-fade-in" style={{ animationDelay: '0s' }}>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex items-center gap-4 mb-8"
+          >
             <div className="decorative-line" />
             <span className="display-tagline" style={{ color: 'var(--text-linen)' }}>
               Scratch to Reveal Your Next Date
             </span>
-          </div>
+          </motion.div>
 
           {/* Logo / Brand Name */}
-          <h1
-            className="display-logo mb-8 hero-fade-in"
-            style={{ color: 'var(--text-ivory)', animationDelay: '0.1s' }}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="display-logo mb-8"
+            style={{ color: 'var(--text-ivory)' }}
           >
             Dately
             <span className="sr-only"> — AI-Powered Surprise Date Planner for Couples</span>
-          </h1>
+          </motion.h1>
 
           {/* Description */}
-          <p
-            className="text-lg md:text-xl leading-relaxed mb-10 max-w-xl font-body hero-fade-in"
-            style={{ color: 'var(--text-linen)', animationDelay: '0.2s' }}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-lg md:text-xl leading-relaxed mb-10 max-w-xl font-body"
+            style={{ color: 'var(--text-linen)' }}
           >
             AI-powered surprise date plans you scratch to reveal. Create unforgettable
             memories with your partner, one spontaneous adventure at a time.
-          </p>
+          </motion.p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-8 hero-fade-in" style={{ animationDelay: '0.3s' }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 mb-8"
+          >
             {/* App Store Button - Coming Soon */}
             <span
               className="store-btn flex items-center gap-3 px-6 py-4 rounded-xl cursor-default opacity-70"
@@ -87,30 +103,40 @@ export default function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-          </div>
+          </motion.div>
 
           {/* Availability Note */}
-          <p
-            className="text-sm font-body hero-fade-in"
-            style={{ color: 'var(--text-taupe)', animationDelay: '0.5s' }}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-sm font-body"
+            style={{ color: 'var(--text-taupe)' }}
           >
             Coming soon to iOS. Join the waitlist for early access.
-          </p>
+          </motion.p>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hero-fade-in" style={{ animationDelay: '1s' }}>
-        <a
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+      >
+        <motion.a
           href="#how-it-works"
-          className="block hero-bounce"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+          className="block"
           aria-label="Scroll down"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" style={{ color: 'var(--text-taupe)' }}>
             <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
           </svg>
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
     </section>
   )
 }

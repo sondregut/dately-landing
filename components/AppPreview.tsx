@@ -89,11 +89,11 @@ export default function AppPreview() {
                   height={580}
                   className="drop-shadow-2xl"
                   sizes="(max-width: 768px) 220px, 280px"
-                  loading="lazy"
-                  quality={75}
+                  loading={i === 1 ? undefined : 'lazy'}
                   style={{
                     filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))',
                   }}
+                  priority={i === 1}
                 />
               </motion.div>
             ))}
