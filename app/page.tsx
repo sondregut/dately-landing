@@ -1,15 +1,13 @@
-import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import HowItWorks from '@/components/HowItWorks'
 import Features from '@/components/Features'
-
-const AppPreview = dynamic(() => import('@/components/AppPreview'))
-const FounderStory = dynamic(() => import('@/components/FounderStory'))
-const Audiences = dynamic(() => import('@/components/Audiences'))
-const FAQ = dynamic(() => import('@/components/FAQ'))
-const Waitlist = dynamic(() => import('@/components/Waitlist'))
-const Footer = dynamic(() => import('@/components/Footer'))
+import AppPreview from '@/components/AppPreview'
+import FounderStory from '@/components/FounderStory'
+import Audiences from '@/components/Audiences'
+import FAQ from '@/components/FAQ'
+import Waitlist from '@/components/Waitlist'
+import Footer from '@/components/Footer'
 
 const organizationJsonLd = {
   '@context': 'https://schema.org',
