@@ -29,9 +29,10 @@ export default function Footer() {
             </h4>
             <nav className="flex flex-col gap-3">
               {[
-                { label: 'Home', href: '#' },
+                { label: 'Home', href: '/' },
                 { label: 'Features', href: '#features' },
                 { label: 'FAQ', href: '#faq' },
+                { label: 'Blog', href: '/blog' },
                 { label: 'Support', href: '/support' },
                 { label: 'Terms', href: '/terms' },
                 { label: 'Privacy', href: '/privacy' },

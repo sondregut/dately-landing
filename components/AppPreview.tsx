@@ -5,19 +5,19 @@ import Image from 'next/image'
 
 const phones = [
   {
-    src: '/screenshots/dately_scratch.png',
+    src: '/screenshots/dately_scratch.jpg',
     alt: 'Dately scratch-to-reveal card',
     className: '-rotate-6 scale-[0.85] origin-bottom-right',
     zIndex: 1,
   },
   {
-    src: '/screenshots/dately_home.png',
+    src: '/screenshots/dately_home.jpg',
     alt: 'Dately home screen',
     className: 'scale-100',
     zIndex: 3,
   },
   {
-    src: '/screenshots/dately_dateplan.png',
+    src: '/screenshots/dately_dateplan.jpg',
     alt: 'Dately date plan itinerary',
     className: 'rotate-6 scale-[0.85] origin-bottom-left',
     zIndex: 1,
@@ -88,6 +88,8 @@ export default function AppPreview() {
                   width={280}
                   height={580}
                   className="drop-shadow-2xl"
+                  sizes="(max-width: 768px) 220px, 280px"
+                  loading={i === 1 ? undefined : 'lazy'}
                   style={{
                     filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))',
                   }}

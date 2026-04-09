@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { supabase } from '@/lib/supabase'
 import type { SupabaseClient } from '@supabase/supabase-js'
+import WaitlistCount from './WaitlistCount'
 
 export default function Waitlist() {
   const [email, setEmail] = useState('')
@@ -75,6 +76,15 @@ export default function Waitlist() {
         }}
       />
 
+      <noscript>
+        <div className="relative z-10 max-w-xl mx-auto text-center py-8">
+          <p style={{ color: 'var(--text-linen)', fontFamily: 'var(--font-inter), system-ui, sans-serif' }}>
+            Please enable JavaScript to join the waitlist, or email us at{' '}
+            <a href="mailto:support@trydately.com" style={{ color: 'var(--champagne-gold)' }}>support@trydately.com</a>.
+          </p>
+        </div>
+      </noscript>
+
       <div className="relative z-10 max-w-xl mx-auto text-center">
         {/* Decorative line */}
         <motion.div
@@ -109,11 +119,22 @@ export default function Waitlist() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-body text-lg mb-10"
+          className="font-body text-lg mb-6"
           style={{ color: 'var(--text-linen)' }}
         >
           Get early access and be the first to experience Dately.
         </motion.p>
+
+        {/* Waitlist counter */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.25 }}
+          className="mb-10"
+        >
+          <WaitlistCount />
+        </motion.div>
 
         {/* Form */}
         {status === 'success' ? (
@@ -150,11 +171,14 @@ export default function Waitlist() {
             className="space-y-4"
           >
             {/* Name field (optional) */}
+            <label htmlFor="waitlist-name" className="sr-only">Your name (optional)</label>
             <input
+              id="waitlist-name"
               type="text"
               placeholder="Your name (optional)"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              autoComplete="name"
               className="w-full px-6 py-4 rounded-xl font-body text-base outline-none transition-all duration-300"
               style={{
                 background: 'rgba(255, 255, 255, 0.05)',
@@ -172,12 +196,15 @@ export default function Waitlist() {
             />
 
             {/* Email field */}
+            <label htmlFor="waitlist-email" className="sr-only">Email address</label>
             <input
+              id="waitlist-email"
               type="email"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              autoComplete="email"
               className="w-full px-6 py-4 rounded-xl font-body text-base outline-none transition-all duration-300"
               style={{
                 background: 'rgba(255, 255, 255, 0.05)',

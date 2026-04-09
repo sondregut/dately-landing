@@ -1,32 +1,32 @@
 'use client'
 
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const faqs = [
   {
     question: 'What is Dately?',
-    answer: 'Dately is an iOS app that creates AI-powered surprise date plans. You set your mood, budget, and time — then scratch to reveal a personalized itinerary built from real local venues and events.',
+    answer: 'Dately is an iOS app designed for couples and singles who want to break out of date-night routines without spending hours planning. Instead of choosing a restaurant or activity yourself, you set a few preferences — your mood (romantic, adventurous, cozy, or spontaneous), your available time, and your budget — and Dately\'s AI generates a complete, multi-stop date itinerary using real venues from your area. The surprise element is central to the experience: each activity in your plan is hidden behind a virtual scratch card. You swipe to reveal each stop one at a time, turning the planning process itself into part of the date. All venues are sourced from Google Places, Ticketmaster, and local event APIs, so every suggestion is a real location you can actually visit.',
   },
   {
     question: 'How does the scratch-to-reveal feature work?',
-    answer: 'Once your date plan is generated, each activity is hidden behind a scratch card. Swipe to reveal each part of your itinerary one at a time — adding a fun element of surprise to your date night.',
+    answer: 'Once Dately generates your date plan, each activity — whether it\'s a dinner reservation, a live show, or a scenic walk — is hidden behind an interactive scratch card within the app. You swipe your finger across the card to reveal each part of your itinerary one at a time. This means you can choose to reveal the entire plan at once if you prefer to prepare, or reveal each stop just before you head there for maximum spontaneity. The scratch mechanic was designed to bring back the excitement of not knowing what\'s next, turning an ordinary evening into something that feels like an adventure. After your date, you can save the revealed plan to your scrapbook with photos and notes.',
   },
   {
     question: 'Is Dately free?',
-    answer: 'Dately will offer a free tier with a limited number of date plans per month. Premium plans unlock unlimited dates, advanced customization, and exclusive date packs.',
+    answer: 'Dately offers a free tier that gives you a limited number of AI-generated date plans per month — enough to try the app and see how it works for you. If you want more, premium plans unlock unlimited date generation, advanced customization options like dietary restrictions and accessibility preferences, and exclusive themed date packs (such as anniversary specials, seasonal activities, and adventure challenges). Pricing details will be announced closer to launch. All plans are billed through the Apple App Store, so you can manage or cancel your subscription anytime from your iPhone settings. There are no hidden fees, and free users still get the full scratch-to-reveal experience.',
   },
   {
     question: 'What cities is Dately available in?',
-    answer: 'Dately works in any city. We use Google Places, Ticketmaster, and local event data to find real venues and experiences wherever you are.',
+    answer: 'Dately works in any city worldwide. The app uses your location to query real-time venue and event data from multiple sources, so it adapts to wherever you are. Whether you\'re planning a date night in New York, a weekend outing in London, or exploring a smaller town you\'re visiting for the first time, Dately will find real restaurants, bars, attractions, concerts, and local events near you. The quality of suggestions naturally varies by location density — a major city will have more options than a rural area — but the AI is designed to create great plans with whatever is available. You can also set a custom location if you want to plan ahead for a trip.',
   },
   {
     question: 'How does Dately find venues and events?',
-    answer: 'We combine multiple data sources — Google Places for restaurants, cafes, and attractions; Ticketmaster for concerts and shows; and local event APIs for community events. Every suggestion is a real place you can visit.',
+    answer: 'Dately combines multiple real-time data sources to build your date itinerary. Google Places provides restaurants, cafes, bars, and local attractions with up-to-date information on ratings, hours, and pricing. Ticketmaster supplies concerts, sports events, and live shows happening near you. Local event APIs surface community events like food festivals, art walks, and pop-up markets. The AI — powered by Claude from Anthropic — then takes your preferences (mood, budget, time, dietary needs) and weaves these real venues into a coherent, multi-stop plan that flows logically. Every single suggestion is a real place with a real address that you can navigate to. Dately never invents fictional venues or fabricates business details.',
   },
   {
     question: 'When does Dately launch?',
-    answer: 'We\'re currently in development with a launch planned for 2026. Join the waitlist to get early access and be the first to know when we go live.',
+    answer: 'Dately is currently in active development with a launch planned for 2026. The app is being built as a native iOS application and will be available on the Apple App Store. If you join the waitlist, you\'ll be among the first to know when the app goes live and may receive early access before the public launch. Waitlist members will also get updates on new features as they\'re built, including the date scrapbook, social sharing, and themed date packs. We\'re building in public and sharing progress on our Instagram (@trydately) and TikTok (@datelyapp) if you want to follow along.',
   },
 ]
 
@@ -61,24 +61,22 @@ function FAQItem({ faq, index }: { faq: typeof faqs[0]; index: number }) {
         </motion.span>
       </button>
 
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="overflow-hidden"
-          >
-            <p
-              className="font-body text-base leading-relaxed pb-6"
-              style={{ color: 'var(--text-linen)' }}
-            >
-              {faq.answer}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <motion.div
+        initial={false}
+        animate={{
+          height: open ? 'auto' : 0,
+          opacity: open ? 1 : 0,
+        }}
+        transition={{ duration: 0.3 }}
+        className="overflow-hidden"
+      >
+        <p
+          className="font-body text-base leading-relaxed pb-6"
+          style={{ color: 'var(--text-linen)' }}
+        >
+          {faq.answer}
+        </p>
+      </motion.div>
     </motion.div>
   )
 }

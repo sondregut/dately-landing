@@ -37,8 +37,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/hero-bg.jpg',
-        width: 1200,
-        height: 630,
+        width: 736,
+        height: 491,
+        type: 'image/jpeg',
         alt: 'Dately app — scratch to reveal your surprise date plan',
       },
     ],
@@ -47,7 +48,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dately — Scratch to Reveal Surprise Date Plans',
     description: 'AI picks real local restaurants, events & activities. You scratch to reveal the plan. Join the waitlist.',
-    images: ['/hero-bg.jpg'],
+    images: {
+      url: '/hero-bg.jpg',
+      alt: 'Dately app — scratch to reveal your surprise date plan',
+    },
     creator: '@trydately',
   },
   robots: {
@@ -74,7 +78,9 @@ export default function RootLayout({
         <meta httpEquiv="X-Frame-Options" content="DENY" />
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta name="referrer" content="origin-when-cross-origin" />
+        <meta name="author" content="Dately" />
         <meta name="google-site-verification" content="kkh1oHiK7XSldZSjZnQnrZBbZ5X575wgR4fLddd34aw" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="antialiased">
         {children}

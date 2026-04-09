@@ -1,0 +1,20 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Dately Blog',
+    default: 'Blog — Date Night Tips & Ideas | Dately',
+  },
+  description: 'Date night tips, creative date ideas, and relationship advice from the Dately team. Discover new ways to make every date unforgettable.',
+  alternates: {
+    canonical: '/blog',
+  },
+}
+
+export default function BlogLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return children
+}
