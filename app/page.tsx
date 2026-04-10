@@ -68,7 +68,7 @@ const faqJsonLd = {
       name: 'What is Dately?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dately is an iOS app designed for couples and singles who want to break out of date-night routines without spending hours planning. Instead of choosing a restaurant or activity yourself, you set a few preferences — your mood (romantic, adventurous, cozy, or spontaneous), your available time, and your budget — and Dately\'s AI generates a complete, multi-stop date itinerary using real venues from your area. The surprise element is central to the experience: each activity in your plan is hidden behind a virtual scratch card. You swipe to reveal each stop one at a time, turning the planning process itself into part of the date. All venues are sourced from Google Places, Ticketmaster, and local event APIs, so every suggestion is a real location you can actually visit.',
+        text: 'Dately is an iOS app designed for couples and singles who want to break out of date-night routines without spending hours planning. Instead of choosing a restaurant or activity yourself, you set a few preferences — your mood (romantic, adventurous, cozy, or spontaneous), your available time, and your budget — and Dately\'s AI generates a complete, multi-stop date itinerary using real venues from your area. The surprise element is central to the experience: each activity in your plan is hidden behind a virtual scratch card. You swipe to reveal each stop one at a time, turning the planning process itself into part of the date. Every suggestion is a real location you can actually visit.',
       },
     },
     {
@@ -100,7 +100,7 @@ const faqJsonLd = {
       name: 'How does Dately find venues and events?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dately combines multiple real-time data sources to build your date itinerary. Google Places provides restaurants, cafes, bars, and local attractions with up-to-date information on ratings, hours, and pricing. Ticketmaster supplies concerts, sports events, and live shows happening near you. Local event APIs surface community events like food festivals, art walks, and pop-up markets. The AI — powered by Claude from Anthropic — then takes your preferences (mood, budget, time, dietary needs) and weaves these real venues into a coherent, multi-stop plan that flows logically. Every single suggestion is a real place with a real address that you can navigate to. Dately never invents fictional venues or fabricates business details.',
+        text: 'Dately combines multiple real-time data sources to build your date itinerary — restaurants, cafes, bars, local attractions, concerts, live shows, community events, and more. The AI then takes your preferences (mood, budget, time, dietary needs) and weaves these real venues into a coherent, multi-stop plan that flows logically. Every single suggestion is a real place with a real address that you can navigate to. Dately never invents fictional venues or fabricates business details.',
       },
     },
     {

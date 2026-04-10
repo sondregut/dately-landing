@@ -37,7 +37,7 @@ This simple mechanic does three things:
 
 ## The Real Venue Difference
 
-Plenty of apps generate random date suggestions. What makes Dately different is that every venue is real. We pull from Google Places, Ticketmaster, and local event data to ensure that when you reveal a restaurant, it actually exists, is open, and matches your budget. The AI doesn't hallucinate a fictional bistro — it recommends a place with actual reviews and directions.
+Plenty of apps generate random date suggestions. What makes Dately different is that every venue is real. We pull from multiple real-time data sources to ensure that when you reveal a restaurant, it actually exists, is open, and matches your budget. The AI doesn't hallucinate a fictional bistro — it recommends a place with actual reviews and directions.
 
 ## Try It Yourself
 
@@ -66,7 +66,7 @@ Most cities have at least one museum with free admission days. Check your local 
 
 ## 4. Local Live Music
 
-Skip the $200 concert tickets and find a local bar or coffee shop with live music. Many venues host free or low-cost shows on weekday nights. Ticketmaster's discovery feature and local event pages are great for finding these.
+Skip the $200 concert tickets and find a local bar or coffee shop with live music. Many venues host free or low-cost shows on weekday nights. Local event pages and venue calendars are great for finding these.
 
 ## 5. Walking Food Tour (DIY)
 
@@ -107,7 +107,7 @@ All of these ideas work great as self-planned dates. But if you'd rather skip th
   {
     slug: 'how-dately-uses-ai',
     title: 'How Dately Uses AI to Plan Your Dates — And Why Every Venue Is Real',
-    description: 'A look at how Dately combines Claude AI with Google Places, Ticketmaster, and local event data to generate date plans that you can actually follow.',
+    description: 'A look at how Dately uses AI with real venue and event data to generate date plans that you can actually follow.',
     date: '2026-04-03',
     author: 'Sondre Guttormsen',
     readTime: '4 min read',
@@ -119,9 +119,8 @@ Here's exactly how it works.
 
 Before the AI does anything, Dately queries multiple real-time data sources based on your location:
 
-- **Google Places API** returns restaurants, cafes, bars, parks, museums, and other attractions near you. Each result includes ratings, price levels, operating hours, and photos.
-- **Ticketmaster** provides upcoming concerts, comedy shows, sports events, and performances.
-- **Local event APIs** surface community events like food festivals, art walks, and pop-up markets.
+- **Venue data** returns restaurants, cafes, bars, parks, museums, and other attractions near you — each with ratings, price levels, operating hours, and photos.
+- **Event data** provides upcoming concerts, comedy shows, sports events, performances, food festivals, art walks, and pop-up markets near you.
 
 This gives Dately a pool of actual, verified options to work with — not a list of generic suggestions.
 

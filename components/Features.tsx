@@ -23,7 +23,7 @@ const features = [
   },
   {
     title: 'Real Venues & Events',
-    description: 'Every suggestion is a real place you can visit. Powered by Google Places, Ticketmaster, and local event APIs — no made-up restaurants or fictional venues, ever.',
+    description: 'Every suggestion is a real place you can visit — no made-up restaurants or fictional venues, ever.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />

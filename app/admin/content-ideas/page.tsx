@@ -207,7 +207,7 @@ const sections: Section[] = [
         platform: 'Instagram',
         pillar: 'Educate',
         hook: 'Think you\'ve done every date in your city? Think again.',
-        concept: 'Slide 1: Hook. Slides 2-7: Unique date ideas people never think of \u2014 generated from real local events, hidden gem venues, seasonal pop-ups. Show Dately pulling from Ticketmaster, Google Events, and local places data. Slide 8: "Dately finds what you\'d never Google."',
+        concept: 'Slide 1: Hook. Slides 2-7: Unique date ideas people never think of \u2014 generated from real local events, hidden gem venues, seasonal pop-ups. Show Dately surfacing real local data. Slide 8: "Dately finds what you\'d never Google."',
         cta: 'Drop your city in the comments \u2014 we\'ll prove it',
       },
       {
@@ -422,7 +422,7 @@ const sections: Section[] = [
         platform: 'TikTok + Instagram',
         pillar: 'Educate',
         hook: 'Your city has secret pop-up events happening this week \u2014 here\'s how to find them',
-        concept: 'Show how Dately pulls from Ticketmaster and Google Events to surface pop-up experiences, food festivals, art shows, and seasonal markets you\'d never find on your own. The dates find you.',
+        concept: 'Show how Dately surfaces pop-up experiences, food festivals, art shows, and seasonal markets you\'d never find on your own. The dates find you.',
         cta: 'Stop missing out. Dately finds what\'s happening near you',
       },
       {
@@ -517,7 +517,7 @@ const sections: Section[] = [
         platform: 'TikTok + Instagram',
         pillar: 'Promote',
         hook: 'Unlike those AI apps that make up restaurants that don\'t exist\u2026',
-        concept: 'Call out the problem of AI hallucinating fake venues. Show Dately pulling from Google Places, Ticketmaster, and real event data. Zoom in on real ratings, real addresses, real hours. "Every place in your plan is a place you can actually go to."',
+        concept: 'Call out the problem of AI hallucinating fake venues. Show Dately pulling from real venue and event data. Zoom in on real ratings, real addresses, real hours. "Every place in your plan is a place you can actually go to."',
         cta: 'Real dates. Real places. Download Dately.',
       },
       {
@@ -797,7 +797,7 @@ const sections: Section[] = [
         platform: 'TikTok + Instagram',
         pillar: 'Educate',
         hook: 'There\'s a Claude AI and 5 real APIs behind every scratch card',
-        concept: 'Quick explainer of the tech stack in accessible terms: AI generates the plan, Google Places finds real venues, Ticketmaster finds events, weather API checks the forecast, MapKit routes your evening. Tech transparency builds trust.',
+        concept: 'Quick explainer of the tech stack in accessible terms: AI generates the plan, real venue and event data powers suggestions, weather API checks the forecast, MapKit routes your evening. Tech transparency builds trust.',
         cta: 'Smart tech, real dates. Link in bio',
       },
     ],

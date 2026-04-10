@@ -476,7 +476,7 @@ PERFECT FOR COUPLES & SINGLES
 • New relationships: Focus on the connection, not the logistics.
 
 REAL VENUES. REAL EXPERIENCES.
-We don't guess—we know. Using real data from Google Places, Ticketmaster, and live sources, each date includes:
+We don't guess—we know. Using real venue and event data, each date includes:
 • Specific venue addresses and hours
 • Parking tips and reviews
 • Reservation links (book directly)

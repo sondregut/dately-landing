@@ -56,7 +56,7 @@ export default function FounderStory() {
             className="font-body text-base leading-relaxed mb-6"
             style={{ color: 'var(--text-linen)' }}
           >
-            So we built Dately. Every venue is real, sourced from Google Places and Ticketmaster. Every
+            So we built Dately. Every venue is real, every
             plan is personalized by AI that actually understands what makes a great date. And the
             scratch-to-reveal mechanic? That was born from the idea that anticipation is half the fun.
           </p>
