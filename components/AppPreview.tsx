@@ -5,19 +5,19 @@ import Image from 'next/image'
 
 const phones = [
   {
-    src: '/screenshots/dately_scratch.jpg',
+    src: '/screenshots/dately_scratch.png',
     alt: 'Dately scratch-to-reveal card',
     className: '-rotate-6 scale-[0.85] origin-bottom-right',
     zIndex: 1,
   },
   {
-    src: '/screenshots/dately_home.jpg',
+    src: '/screenshots/dately_home.png',
     alt: 'Dately home screen',
     className: 'scale-100',
     zIndex: 3,
   },
   {
-    src: '/screenshots/dately_dateplan.jpg',
+    src: '/screenshots/dately_dateplan.png',
     alt: 'Dately date plan itinerary',
     className: 'rotate-6 scale-[0.85] origin-bottom-left',
     zIndex: 1,

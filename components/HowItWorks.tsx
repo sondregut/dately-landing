@@ -8,7 +8,7 @@ const steps = [
     number: '01',
     title: 'Choose Your Vibe',
     description: 'Pick a mood, budget, and time. Tell us what you\'re feeling — adventurous, cozy, romantic, or spontaneous.',
-    screenshot: '/screenshots/dately_quiz.jpg',
+    screenshot: '/screenshots/dately_quiz.png',
     screenshotAlt: 'Dately vibe picker screen',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
@@ -20,7 +20,7 @@ const steps = [
     number: '02',
     title: 'Scratch to Reveal',
     description: 'AI generates a surprise date plan with real local venues. Scratch the card to reveal each activity.',
-    screenshot: '/screenshots/dately_scratch.jpg',
+    screenshot: '/screenshots/dately_scratch.png',
     screenshotAlt: 'Dately scratch-to-reveal card',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ const steps = [
     number: '03',
     title: 'Go on Your Date',
     description: 'Follow the itinerary with real directions, save memories to your scrapbook, and rate the experience.',
-    screenshot: '/screenshots/dately_dateplan.jpg',
+    screenshot: '/screenshots/dately_dateplan.png',
     screenshotAlt: 'Dately date plan itinerary',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
